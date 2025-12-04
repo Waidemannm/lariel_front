@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root { 
+  scroll-behavior: smooth;
+  --color-font-black: #1e1e1ef4;
+}
+ 
+html,
+body {
+  @apply overflow-x-hidden w-full;
+}
+
+@layer base {
+  .app-container {
+    @apply flex flex-col min-h-screen justify-between w-full;
+  }
+  main {
+    @apply w-full overflow-y-auto overflow-x-hidden;
+  }
+
+  header{
+    @apply bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700;
+  }
+} 
+
+@Layer home{
+  .home-page {
+  
+  }
+}
+
+@Layer error{
+  .error-page {
+    
+  }
+}
