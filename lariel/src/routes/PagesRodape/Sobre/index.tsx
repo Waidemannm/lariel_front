@@ -110,12 +110,6 @@ export default function Sobre() {
                 Isso ajuda os noivos no planejamento, garantindo organização e controle do número de pessoas.
             </p>
 
-            <p><strong>Lista de Presentes</strong></p>
-            <p className="mb-4">
-                Um espaço dedicado aos presentes escolhidos pelos noivos,
-                facilitando a vida dos convidados na hora de presentear com carinho.
-            </p>
-
             <p><strong>Galeria de Fotos</strong></p>
             <p className="mb-4">
                 Lugar onde ficam reunidas fotos do casal, registros especiais e, futuramente, momentos do próprio
