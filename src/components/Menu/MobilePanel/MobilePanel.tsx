@@ -26,7 +26,7 @@ export default function MobilePanel(): React.ReactElement {
             role="dialog"
             aria-modal="true"
             aria-label="Menu móvel"
-            className={`sm:hidden fixed inset-0 z-50 transition-opacity duration-300 ${
+            className={`md:hidden fixed inset-0 z-50 transition-opacity duration-300 ${
                 isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
         >
