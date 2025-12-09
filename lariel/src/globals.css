@@ -23,13 +23,13 @@ body {
   }
 } 
 
-@Layer home{
+@layer home{
   .home-page {
   
   }
 }
 
-@Layer error{
+@layer error{
   .error-page {
     
   }
