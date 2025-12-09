@@ -11,7 +11,7 @@ export default function Rodape(){
                 <Link target="_blank" rel="noopner noreferrer" to="#" aria-label="YouTUbe" className="" ><FaYoutube className="text-[1.2rem]" /></Link>
             </div>
             <div className='flex justify-center'>
-                <Link  className="text-[0.8rem]" to="/sobre">Sobre</Link>
+                <Link className="text-[0.8rem]" to="/sobre">Sobre</Link>
             </div>
         </footer>
     );
