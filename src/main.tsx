@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import "./globals.css";
-import App from './App.tsx';
+import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import "./globals.css";
 import Error from './routes/Pages/Error';
@@ -14,6 +14,8 @@ import Casamento from './routes/Pages/Casamento';
 import Dress from './routes/Pages/Dress';
 import Historia from './routes/Pages/Historia';
 import Momentos from './routes/Pages/Momentos';
+
+
 
 const router = createBrowserRouter([
     {path: "/", element: <App/>, errorElement: <Error/>, children: [
