@@ -21,14 +21,110 @@
             "nome": "Larissa",
             "nomeCompleto": "Larissa Araújo Guilherme",
             "idade": 26,
-            "urlFoto": "/lariel/src/images/Casamento/"
+            "urlFoto": "/lariel/src/images/Casal/"
         },
         {
             "id": 2,
             "nome": "Samuel",
             "nomeCompleto": "Samuel ",
             "idade": 26,
-            "urlFoto": "/lariel/src/images/Casamento/"
+            "urlFoto": "/lariel/src/images/Casal/"
+        }
+    ], 
+    "dress":[
+        {
+            "id": 1,
+            "urlFoto": "/lariel/src/images/Dress/dress.webp",
+            "texto": "Pedimos traje social completo para o evento. Também pedimos a gentileza de evitar vestimentas das cores: branco, creme e off white."
+        }
+    ],
+    "nossaHistoria":[
+        {
+            "id": 1,
+            "urlFoto": "/lariel/src/images/Historia/nossaHistoria.webp",
+            "texto": "Nós nos conhecemos em 2011, quando estávamos no primeiro ano do ensino médio. Seguimos faculdades e caminhos diferentes por alguns anos, quando a vida nos uniu novamente! Nunca mais nos separamos desde então."
+        }
+    ],
+    "momentos":[
+        {
+            "id": 1,
+            "texto": "Somos muito gratos a todos que fazem parte da nossa história e estão sempre ao nosso lado."
+        }
+    ],
+    "momento":[
+        {
+            "id": 1,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 2,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 3,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 4,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 5,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 6,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 7,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 8,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 9,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },{
+            "id": 10,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 11,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 12,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 13,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 14,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
+        },
+        {
+            "id": 15,
+            "urlFoto": "/lariel/src/images/Momentos/foto1.webp",
+            "textoFoto":"Nosso momento de paz no parque"
         }
     ]
 }

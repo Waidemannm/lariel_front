@@ -78,7 +78,7 @@ import dados from "../../../../db.json";
                             </div>
                             <div className="flex flex-col">
                                 <h1 className="text-lg font-thin">Local</h1>
-                                <p className="text-md font-semibold leading-tight">{casamento?.local}</p>
+                                <p className="text-md font-medium">{casamento?.local}</p>
                             </div>
                         </div>
 
@@ -90,7 +90,7 @@ import dados from "../../../../db.json";
                             <button onClick={downloadICS} className="bg-gradient-to-r from-blue-600 to-blue-700 shadow-xl p-3 rounded-lg text-white w-full md:w-56 lg:w-45 flex justify-center items-center hover:text-blue-200 transition-colors lg:text-sm font-medium">DOWNLOAD .ics</button>
                         </div>
                     </div>
-                    <img src={casamento?.urlFoto} alt="Foto do local do casamento" className="shadow-xl w-full md:w-1/3 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>
+                    <img src={casamento?.urlFoto} alt="Foto do local do casamento" className="shadow-xl w-full md:w-1/4 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>
                 </div>
             </main>
         );
