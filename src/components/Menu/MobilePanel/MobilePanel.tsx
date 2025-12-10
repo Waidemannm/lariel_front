@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
 import { useMenu } from "../hooks/useMenu";
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaFacebookF, FaInstagram, FaYoutube, FaHome, FaRegCalendarCheck, FaGift,FaRegCommentDots, FaHeart, FaTshirt,FaBookOpen, FaCameraRetro} from 'react-icons/fa';
+import type { TipoCasamento } from "../../../types//tipoCasamento";
+import dados from "../../../../db.json";
 
 export default function MobilePanel(): React.ReactElement {
+
+    const [casamento, setCasamento] = useState<TipoCasamento>();
+    
+    useEffect(() => {
+        setCasamento(dados.casamento[0]); 
+    }, []);
     const { isOpen, close } = useMenu();
 
     useEffect(() => {
@@ -118,9 +126,9 @@ export default function MobilePanel(): React.ReactElement {
                 </nav>
 
                 <div className="mt-12 flex items-center gap-8">
-                    <Link target="_blank" rel="noopner noreferrer" to="#" aria-label="Facebook" className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-blue-500 hover:scale-110 hover:rotate-12 active:scale-95" ><FaFacebookF className="text-xl" /></Link>
-                    <Link target="_blank" rel="noopner noreferrer" to="#" aria-label="Instagram" className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-blue-500 hover:scale-110 hover:rotate-12 active:scale-95" ><FaInstagram className="text-x" /></Link>
-                    <Link target="_blank" rel="noopner noreferrer" to="#" aria-label="YouTube" className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-blue-500 hover:scale-110 hover:rotate-12 active:scale-95" ><FaYoutube className="text-x" /></Link>
+                    <Link target="_blank" rel="noopner noreferrer" to={`${casamento?.urlFacebook}`} aria-label="Facebook" className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-blue-500 hover:scale-110 hover:rotate-12 active:scale-95" ><FaFacebookF className="text-xl" /></Link>
+                    <Link target="_blank" rel="noopner noreferrer" to={`${casamento?.urlInstagram}`} aria-label="Instagram" className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-blue-500 hover:scale-110 hover:rotate-12 active:scale-95" ><FaInstagram className="text-x" /></Link>
+                    <Link target="_blank" rel="noopner noreferrer" to={`${casamento?.ulrYouTube}`} aria-label="YouTube" className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-blue-500 hover:scale-110 hover:rotate-12 active:scale-95" ><FaYoutube className="text-x" /></Link>
                 </div>
             </div>
         </div>
