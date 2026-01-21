@@ -31,6 +31,7 @@
             "urlFoto": "/lariel/src/images/Casal/"
         }
     ], 
+    
     "dress":[
         {
             "id": 1,
@@ -38,6 +39,7 @@
             "texto": "Pedimos traje social completo para o evento. Também pedimos a gentileza de evitar vestimentas das cores: branco, creme e off white."
         }
     ],
+
     "nossaHistoria":[
         {
             "id": 1,
@@ -45,12 +47,14 @@
             "texto": "Nós nos conhecemos em 2011, quando estávamos no primeiro ano do ensino médio. Seguimos faculdades e caminhos diferentes por alguns anos, quando a vida nos uniu novamente! Nunca mais nos separamos desde então."
         }
     ],
+
     "momentos":[
         {
             "id": 1,
             "texto": "Somos muito gratos a todos que fazem parte da nossa história e estão sempre ao nosso lado."
         }
     ],
+
     "momento":[
         {
             "id": 1,
