@@ -7,4 +7,4 @@ export default function CardMomento (props:{momento:TipoMomento}) {
             <img src={props.momento.urlFoto} alt="Foto de um momento do casal" className="shadow-xl w-full md:w-1/2 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>
         </div>
     );
-};
+}; 

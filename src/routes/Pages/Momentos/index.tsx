@@ -19,7 +19,7 @@ export default function Momentos(){
     }, []);
 
     return(
-        <main className="flex flex-col items-center text-[var(--color-font-black)] max-w-7xl mx-auto px-4 py-10 leading-relaxed flex flex-col gap-2">
+        <main className="flex flex-col items-center text-[var(--color-font-black)] max-w-7xl mx-auto px-4 py-10 leading-relaxed gap-2">
             <div className="w-full md:max-w-xl max-w-sm">
                 <h1 className="text-sm font-thin text-center">GALERIA DE FOTOS</h1>
                 <h2 className="text-2xl font-semibold mb-3 text-center">Momentos</h2>

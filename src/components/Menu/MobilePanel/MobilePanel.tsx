@@ -27,19 +27,19 @@ export default function MobilePanel(): React.ReactElement {
         };
         
     }, [isOpen]);
-
+ 
     return (
         <div
             id="mobile-menu"
             role="dialog"
             aria-modal="true"
             aria-label="Menu móvel"
-            className={`md:hidden fixed inset-0 z-50 transition-opacity duration-300 ${
+            className={`md:hidden fixed inset-0 z-50 transition-opacity duration-300 p-10 ${
                 isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
         >
             <div 
-                className={`absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/95 to-gray-900 backdrop-blur-sm transition-all duration-500 ${
+                className={`absolute inset-0  bg-[var(--color-2)] backdrop-blur-sm transition-all duration-500 ${
                     isOpen ? "opacity-100" : "opacity-0"
                 }`} 
                 onClick={close} 
@@ -49,8 +49,10 @@ export default function MobilePanel(): React.ReactElement {
                 className={`relative z-10 flex flex-col items-center justify-center h-full text-white/90 transition-all duration-500 transform ${
                     isOpen ? "translate-y-0 opacity-100 scale-100" : "translate-y-8 opacity-0 scale-95"
                 }`}
+
             >
-                <nav className="overflow-auto flex flex-col items-center gap-8 text-xl font-semibold" onClick={close}>
+                <nav className="overflow-y-auto overflow-x-hidden flex flex-col items-left gap-8" onClick={close}>
+
                     <Link 
                         to="/" 
                         className="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-white/10 hover:text-blue-400 hover:scale-105 active:scale-95" 
@@ -122,7 +124,7 @@ export default function MobilePanel(): React.ReactElement {
                         <FaCameraRetro className="text-2xl" />
                         <span>Momentos</span>
                     </Link>
-                   
+
                 </nav>
 
                 <div className="mt-12 flex items-center gap-8">

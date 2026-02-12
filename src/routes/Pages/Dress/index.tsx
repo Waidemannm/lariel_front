@@ -11,7 +11,7 @@ export default function Dress(){
     }, []);
 
     return(
-        <main className="flex flex-col text-[var(--color-font-black)] max-w-7xl mx-auto px-4 py-10 leading-relaxed flex flex-col items-center gap-10">
+        <main className="flex flex-col text-[var(--color-font-black)] max-w-7xl mx-auto px-4 py-10 leading-relaxed items-center gap-10">
             <div className="w-full md:max-w-xl max-w-sm">
                 <h1 className="text-sm font-thin text-center">CLOTHING</h1>
                 <h1 className="text-2xl font-semibold text-center mb-3">Dress code</h1>

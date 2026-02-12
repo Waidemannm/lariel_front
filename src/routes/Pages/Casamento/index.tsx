@@ -52,7 +52,7 @@ import dados from "../../../../db.json";
         };
 
         return(
-            <main className="text-[var(--color-font-black)] max-w-7xl mx-auto px-4 py-10 leading-relaxed flex flex-col items-center gap-10">
+            <main className="text-[var(--color-font-black)] max-w-7xl mx-auto px-4 py-10 leading-relaxed items-center gap-10">
 
                 <iframe src={casamento?.urlGoogleMaps} rel="noopner noreferrer" className="w-full h-80 md:h-50 xl:h-65 border border-gray-300 rounded-lg" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
