@@ -49,8 +49,9 @@ export default function CardRecadoAdd({open,  onClose, children, }: {open: boole
     }
 
     return(
-        <div className={`fixed mt-15 w-full inset-0 flex justify-center items-center transition-colors ${open ? "visible bg-black/90" : "invisible"}`}>
-           <div className={`bg-white text-[var(--color-font-black)] rounded-lg shadow p-6 transition-all w-70 md:w-100 ${open ? "scale-100 opacity-100": "scale-110 opacity-0"}`} onClick={(e) => e.stopPropagation()}>
+        <div className={`fixed inset-0 z-50 flex justify-center items-start md:items-center overflow-y-auto transition-opacity duration-300 ${
+            open ? "opacity-100 bg-black/90" : "opacity-0 pointer-events-none"}`}>
+           <div  className={`relative bg-white text-[var(--color-font-black)] rounded-lg shadow p-6  w-[90%] max-w-lg my-10 transition-all duration-300 ${ open ? "scale-100 opacity-100" : "scale-105 opacity-0"}`} onClick={(e) => e.stopPropagation()}>
             <button className="absolute top-2 right-2 rounded-md text-blue-500 m-1" onClick={onClose}>Fechar</button> {children}
             <div className="flex flex-col gap-3 pl-4 mb-5 mt-10">
                 <h1 className="text-xl font-bold ">Deixe seu recado no mural</h1>
