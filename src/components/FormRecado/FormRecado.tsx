@@ -14,7 +14,7 @@ export default function FormRecado ({register, onSubmit}: TipoPropsFormSalvarRec
                 </div>
                 <div className="m-3">
                     <label className="">Mensagem</label>
-                    <input className="focus:outline-none focus:ring-2 focus:ring-[var(--color-2)] focus:border-[var(--color-2)] transition-all duration-150  w-full p-2 border-1 border-[var(--color-font-black)] mt-2 rounded-xl outline-none" type="text" {...register("mensagem", { required: true, maxLength: 1000, })}/>
+                    <input className="focus:outline-none focus:ring-2 focus:ring-[var(--color-2)] focus:border-[var(--color-2)] transition-all duration-150 w-full p-2 border-1 border-[var(--color-font-black)] mt-2 rounded-xl outline-none" type="text" {...register("mensagem", { required: true, maxLength: 1000, })}/>
                 </div>
             
                 <div className="mb-5 mt-3">
