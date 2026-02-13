@@ -7,7 +7,7 @@ export default function CardRecadoAddMensagem() {
     const [openRecadoSalvar, setOpenRecadoSalvar] = useState(false);
 
   return (
-    <div className="flex border-2 border-gray-200 w-250 rounded-xl flex-col items-center p-8 gap-6 mt-5">
+    <div className="flex border-2 border-gray-200 w-350 rounded-xl flex-col items-center p-8 gap-6 mt-5">
         <div className="flex items-center bg-gray-100 rounded-full gap-3 p-5">
           <FaRegCommentDots className="text-4xl text-[var(--color-font-black)]" />
         </div>

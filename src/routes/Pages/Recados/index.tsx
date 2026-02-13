@@ -50,7 +50,7 @@ export default function Recados(){
 
     if (recadosAceitos.length === 0) {
         return (
-        <main className="max-w-7xl mx-auto flex flex-col justify-center items-center leading-relaxed p-8 gap-10">
+        <main className="max-w-7xl mx-auto flex flex-col justify-center leading-relaxed p-5 gap-10">
             <div className="flex justify-center">
                 <CardRecadoAddMensagem/>
             </div>
@@ -63,11 +63,15 @@ export default function Recados(){
             <div className="flex justify-center">
                 <CardRecadoAddMensagem/>
             </div>
-            <div className="flex w-full flex-row flex-wrap justify-center gap-5">
+            <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
                 {recadosAceitos.map((recado) => (
-                <CardRecadoAceitos recadoAceitos={recado} />
+                    <div key={recado.idRecadoAceito} className="mb-6 break-inside-avoid">
+                    <CardRecadoAceitos recadoAceitos={recado} />
+                    </div>
                 ))}
             </div>
+
+
         </main>
     );
 }
