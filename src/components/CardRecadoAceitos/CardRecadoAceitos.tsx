@@ -1,24 +1,20 @@
 import type { TipoRecadoAceito } from "../../types/tipoRecadoAceito";
+import logo from "../../images/ImgIndex/logo.png";
 
 export default function CardRecadoAceitos (props: {recadoAceitos: TipoRecadoAceito}) {
     return(
-    <div className="hover:-translate-y-1 transition-all duration-300 relative w-full rounded-2xl border-2 border-black/10 bg-[#FFF8D6] pt-7 p-5 break-words">
-       
-        <div className="relative left-1/2 -translate-x-1/2">
-            <div className="w-4 h-4 border-2 border-black/10 rounded-full bg-white shadow-sm" />
-        </div>
-
-        <h1 className="text-lg font-semibold text-center">{props.recadoAceitos.nomeConvidados}</h1>
-        <p className="text-xs text-center text-gray-600 mt-1">{props.recadoAceitos.dataMensagem}</p>
-
-        <p className="mt-4 text-sm text-gray-800 font-light leading-relaxed whitespace-pre-line break-words">
-            {props.recadoAceitos.mensagem}
-        </p>
+    <div className="text-white bg-[var(--color-2)] hover:-translate-y-1 transition-all duration-300 rounded-lg border-2 border-[var(--color-2)] p-6 break-all w-350">
+        <div className="flex flex-col-reverse justify-between">
+            <div className="flex  justify-center mt-5"><img src={logo}alt="Logo Larissa e Samuel" className="w-23 h-auto md:w-30" /></div>
+            <hr className="border-t border-white mt-10" />
+            <div className="flex flex-col ">
+                <h1 className="font-bold text-2xl">{props.recadoAceitos.nomeConvidados}</h1>
+                <p className="text-white">{props.recadoAceitos.dataMensagem}</p> 
+                <hr className="border-t border-white mb-10 mt-2" />
+                <p className="text-white font-medium">{props.recadoAceitos.mensagem}</p>
+            </div>
+        </div>        
     </div>
-
-
-
-
     );
 }
 

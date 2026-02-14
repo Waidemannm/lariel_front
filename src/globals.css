@@ -30,10 +30,4 @@ body {
   header{
     @apply bg-[var(--color-2)];
   }
-} 
-
-.convite-nome {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2rem;
-  letter-spacing: 0.02em;
 }

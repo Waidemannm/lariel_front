@@ -63,15 +63,11 @@ export default function Recados(){
             <div className="flex justify-center">
                 <CardRecadoAddMensagem/>
             </div>
-            <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
+            <div className="flex flex-row flex-wrap justify-center gap-10">
                 {recadosAceitos.map((recado) => (
-                    <div key={recado.idRecadoAceito} className="mb-6 break-inside-avoid">
                     <CardRecadoAceitos recadoAceitos={recado} />
-                    </div>
                 ))}
             </div>
-
-
         </main>
     );
 }
