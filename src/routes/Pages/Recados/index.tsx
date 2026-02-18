@@ -7,7 +7,7 @@ const URL_API = import.meta.env.VITE_URL_API;
 
 export default function Recados(){
 
-    const [recadosAceitos, setrecadosAceitos] = useState<TipoRecadoAceito[]>([]);
+    const [recadosAceitos, setRecadosAceitos] = useState<TipoRecadoAceito[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
@@ -19,7 +19,7 @@ export default function Recados(){
             throw new Error("Falha ao buscar os dados. O servidor está online?");
             }
             const data: TipoRecadoAceito[] = await response.json();
-            setrecadosAceitos(data);
+            setRecadosAceitos(data);
         } catch (err) {
             setError(err instanceof Error ? err.message : "Um erro inesperado ocorreu.");
         } finally {
