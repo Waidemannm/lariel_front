@@ -14,6 +14,7 @@ import Casamento from './routes/Pages/Casamento';
 import Dress from './routes/Pages/Dress';
 import Historia from './routes/Pages/Historia';
 import Momentos from './routes/Pages/Momentos';
+import Convidados from './routes/Pages/Convidados';
 
 
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
         {path: "/", element:<Home/>},
         {path: "/sobre", element:<Sobre/>},
         {path: "/confirmar_presenca", element:<Presenca/>},
+        {path: "/convidados_presenca/:nomeConvite/:idConvite", element:<Convidados/>},
         {path: "/lista_presentes", element:<Presentes/>},
         {path: "/mural_recados", element:<Recados/>},
         {path: "/casamento", element:<Casamento/>},
