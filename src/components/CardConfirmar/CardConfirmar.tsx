@@ -14,20 +14,20 @@ export default function CardConfirmar({open,  onClose, children, }: {open: boole
     const [loading, setLoading] = useState(false);
 
     const onSubmit = handleSubmit(async (data) => {
-        
         try {
             setLoading(true);
-            const response = await fetch(`${URL_API}/convites/${data.idConvite}/${data.nomeConvite}`, {
+            const response = await fetch(`${URL_API}/convites/${data.nomeConvite}/${data.idConvite}`, {
                 method: "GET",
                 headers: { "Content-Type": "application/json" }
             });
             if (!response.ok) {
-                throw new Error("Falha ao buscar convidados.");
+                throw new Error("Falha ao buscar convidados. Verifique O ID e o nome do convite.");
             }
+
             navigate(`/convidados_presenca/${data.nomeConvite}/${data.idConvite}`);
             window.location.reload();
         } catch {
-            alert("Falha ao buscar convidados!");
+            alert("Falha ao buscar convidados. Verifique O ID e o nome do convite.");
             navigate("/confirmar_presenca");
             window.location.reload();
         } finally {

@@ -82,12 +82,10 @@ import dados from "../../../../db.json";
                             </div>
                         </div>
 
-                        <div className="mt-10 flex flex-col lg:flex-row md:flex-wrap items-center justify-center gap-4">
-                            <Link to={`${urlMaps}`} target="_blank" rel="noopener noreferrer" className="bg-[var(--color-2)] shadow-xl p-3 rounded-lg text-white w-full md:w-56 lg:w-45 flex justify-center items-center hover:-translate-y-1 transition-all duration-300 text-sm font-medium" >ABRIR NO MAPS</Link>
+                        <div className="mt-10 flex flex-col lg:flex-row md:flex-wrap items-center justify-left gap-4">
+                            <Link to={`${urlMaps}`} target="_blank" rel="noopener noreferrer" className="bg-[var(--color-2)] shadow-xl p-3 rounded-lg text-white w-full md:w-56 lg:w-45 flex justify-center items-center hover:text-blue-200 transition-colors lg:text-sm font-medium" >ABRIR NO MAPS</Link>
 
                             <Link to={googleCalendarUrl} target="_blank" rel="noopener noreferrer" className="bg-[var(--color-2)] shadow-xl p-3 rounded-lg text-white w-full md:w-56 lg:w-45 flex justify-center items-center hover:text-blue-200 transition-colors lg:text-sm font-medium">ADICIONAR À AGENDA </Link>
-
-                            <button onClick={downloadICS} className="bg-[var(--color-2)] shadow-xl p-3 rounded-lg text-white w-full md:w-56 lg:w-45 flex justify-center items-center hover:text-blue-200 transition-colors lg:text-sm font-medium">DOWNLOAD .ics</button>
                         </div>
                     </div>
                     <img src={casamento?.urlFoto} alt="Foto do local do casamento" className="shadow-xl w-full mt-5 md:w-1/4 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>

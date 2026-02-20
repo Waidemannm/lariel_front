@@ -35,22 +35,6 @@ export default function Sobre() {
                 acessível e útil para melhorar o bem-estar no dia a dia.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-10 mb-2">Portfólio</h2>
-            <p>Aqui estão alguns dos meus trabalhos mais recentes:</p>
-
-            <ul className="list-disc ml-6 mt-2 space-y-2">
-                <li>
-                    <a className="text-blue-600 underline" href="https://wellmind-project-ten.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        WellMind — Plataforma de Bem-Estar Inteligente
-                    </a>
-                </li>
-                <li>
-                    <a className="text-blue-600 underline" href="https://cuida-mais-hc.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        Cuida Mais HC — Assistente Virtual de Saúde
-                    </a>
-                </li>
-            </ul>
-
             <h2 className="text-2xl font-semibold mt-10 mb-2">Entre em Contato</h2>
             <p>Caso queira conversar, colaborar ou saber mais sobre meu trabalho, estou disponível nos canais abaixo:</p>
 
