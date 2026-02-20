@@ -165,6 +165,8 @@ Desenvolvedor responsável por toda a arquitetura, implementação e integraçã
 
 ## ⚙ Instalação
 
+⸻
+
 ```bash
 # Clone o repositório
 git clone https://github.com/Waidemannm/lariel_front.git
