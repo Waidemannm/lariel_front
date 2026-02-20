@@ -1,92 +1,179 @@
-Lariel - Casamento da Larissa e Samuel
+# 💙 Lariel — Casamento de Larissa & Samuel
 
-🧠 Título e Descrição
+Plataforma digital desenvolvida para centralizar todas as informações do casamento de Larissa e Samuel em um ambiente moderno, organizado e interativo.
 
-Este site foi criado especialmente para celebrar o casamento de Larissa e Samuel, reunindo em um só lugar todas as informações importantes para amigos e familiares. A proposta é oferecer uma experiência moderna, organizada e elegante — inspirada nas melhores plataformas de casamento — mas totalmente desenvolvida por mim, com programação personalizada e foco total na experiência do usuário.
+O projeto foi concebido com foco em experiência do usuário, organização de dados e integração entre frontend e backend, oferecendo uma solução completa que funciona como:
 
-📌 Status do Projeto
+- Convite digital  
+- Guia oficial do evento  
+- Sistema de confirmação de presença (RSVP)  
+- Mural interativo de mensagens  
 
-✔ Desenvolvimento...
+Tudo desenvolvido com programação própria e arquitetura personalizada.
 
-📚 Sobre o Projeto
+---
 
-A ideia central deste projeto é facilitar a vida dos noivos e convidados, oferecendo um ambiente digital completo que funciona como convite, guia do evento e espaço de interação. Cada detalhe foi pensado para ser intuitivo, acessível e visualmente agradável, criando uma experiência única e significativa para esse momento tão especial.
+## 📌 Status do Projeto
 
-🛠 Tecnologias Utilizadas
+🚧 Em desenvolvimento contínuo  
+✔ Funcionalidades principais implementadas  
+🔄 Melhorias visuais e otimizações em andamento  
 
-Frontend: React, Vite e TypeScript
+---
 
-Backend: Java, Render e Quarkus
+## 🎯 Objetivo
 
-Banco de Dados: Oracle SQL (Developer e Data Modeler)
+Criar uma experiência digital elegante e funcional que facilite a organização do evento e proporcione uma interação significativa entre os noivos e seus convidados.
 
-Versionamento: Git + GitHub
+O sistema foi projetado para ser:
 
-⚙ Instalação
-# Clone o repositório
-git clone https://github.com/Waidemannm/lariel_front.git
+- Intuitivo  
+- Responsivo  
+- Visualmente harmonioso  
+- Integrado a uma API robusta  
 
-# Entre na pasta
-cd wellmind
+---
 
-# Instale as dependências
-npm install
+## 🚀 Estrutura
+    src/
+    ├── components/
+    ├── pages/
+    ├── hooks/
+    ├── services/
+    ├── types/
+    └── assets/
 
-# Inicie o projeto
-npm start
+## 🚀 Funcionalidades
 
-🚀 Funcionalidades
+### 🏠 Página Inicial
 
-# Página Inicial
+Primeiro contato com o evento. Inclui:
 
-Onde tudo começa: foto do casal, mensagem de boas-vindas e o clima do casamento. É o primeiro contato de quem visita e já transmite a emoção da celebração.
+- Foto do casal  
+- Mensagem de boas-vindas  
+- Contagem regressiva  
+- Data e local do casamento  
 
-# História do Casal
+---
 
-Uma seção dedicada a contar a trajetória de Larissa e Samuel — como se conheceram, momentos marcantes e tudo o que os trouxe até o grande dia. Um espaço afetivo criado para aproximar ainda mais os convidados da história deles.
+### 📖 História do Casal
 
-# Informações do Evento
+Seção dedicada à trajetória de Larissa e Samuel, apresentando:
 
-Data, horário, endereço, mapa de localização, instruções de chegada e todos os detalhes essenciais para que os convidados se organizem com tranquilidade.
+- Como se conheceram  
+- Momentos marcantes  
+- Linha do tempo do relacionamento  
 
-# Confirmação de Presença (RSVP)
+---
 
-Um sistema simples e rápido para que os convidados confirmem presença diretamente pelo site. Isso ajuda os noivos no planejamento, garantindo organização e controle do número de pessoas.
+### 💍 Informações do Evento
 
-# Galeria de Fotos
+Área com dados essenciais para os convidados:
 
-Lugar onde ficam reunidas fotos do casal, registros especiais e, futuramente, momentos do próprio dia do casamento. Tudo organizado de maneira elegante.
+- Data e horário  
+- Endereço  
+- Localização  
+- Instruções importantes  
 
-# Mensagens e Recados
+---
 
-Um mural onde familiares e amigos podem deixar mensagens carinhosas para Larissa e Samuel, eternizando votos de felicidade e boas energias.
+### ✅ Confirmação de Presença (RSVP)
 
-🗂 Estrutura de Pastas
-lariel/
-...
+Sistema digital de confirmação que permite:
 
-🌐 Endpoints ou Rotas Principais
+- Identificação por convite  
+- Visualização de convidados vinculados  
+- Confirmação ou ausência individual  
+- Atualização automática no banco de dados  
 
-# Página Home
+---
 
-# História do Casal
+### 📝 Mural de Recados
 
-# Casamento
+Espaço interativo onde convidados podem:
 
-# Confirmação de Presença (RSVP)
+- Enviar mensagens  
+- Adicionar imagem opcional  
+- Ter seus recados moderados antes da publicação  
 
-# Momentos
+**Fluxo:**
 
-# Mural de Recados
+1. Recado enviado  
+2. Salvo como pendente  
+3. Após aprovação, publicado no mural público  
 
-👨‍💻 Autores e Créditos
+---
+
+### 📸 Momentos
+
+Galeria visual com:
+
+- Fotos do casal  
+- Registros especiais  
+- Imagens do evento (após realização)  
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+### Frontend
+- React  
+- Vite  
+- TypeScript  
+- Tailwind CSS  
+
+### Backend
+- Java  
+- Quarkus  
+- Deploy via Render  
+
+### Banco de Dados
+- Oracle SQL  
+- Oracle SQL Developer  
+- Oracle Data Modeler  
+
+### Versionamento
+- Git  
+- GitHub  
+
+---
+
+## 🏗 Arquitetura
+
+O sistema é dividido em:
+
+- **Frontend Público** — interface para convidados  
+- **Painel Administrativo** — gerenciamento de convites e recados  
+- **API REST** — responsável pela lógica e integração com banco  
+- **Banco Oracle** — armazenamento estruturado dos dados  
+
+---
+
+### 👨‍💻 Autor
 
 Moisés Waidemann Molinillo Júnior
+
+Desenvolvedor responsável por toda a arquitetura, implementação e integração do sistema.
+
+⸻
 
 📞 Contato
 
 📧 Email: mjrmolinllo@icloud.com
 
-🌐 Site: ...
+🌐 GitHub: https://github.com/Waidemannm/lariel_front
 
-GitHub: https://github.com/Waidemannm/lariel_front.git
+## ⚙ Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/Waidemannm/lariel_front.git
+
+# Entre na pasta do projeto
+cd lariel_front
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
