@@ -28,7 +28,7 @@ export default function CardConfirmar({open,  onClose, children, }: {open: boole
             window.location.reload();
         } catch {
             alert("Falha ao buscar convidados. Verifique O ID e o nome do convite.");
-            navigate("/");
+            navigate("/convidados_presenca");
             window.location.reload();
         } finally {
             setLoading(false);
