@@ -1,5 +1,5 @@
 import type { TipoMomento } from "../../types/tipoMomento";
-import foto from "../../../images/Momentos/foto1.webp";
+import foto from "../../images/Momentos/foto1.webp";
 
 export default function CardMomento (props:{momento:TipoMomento}) {
     return(

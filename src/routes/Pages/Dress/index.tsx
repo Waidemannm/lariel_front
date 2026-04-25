@@ -1,7 +1,7 @@
 import dados from "../../../../db.json";
 import type { TipoDress } from "../../../types/tipoDress";
 import { useEffect, useState } from "react";
-import foto from "../../../images/Dress/dress.webp";
+import foto from "../../images/Momentos/foto1.webp";
 
 export default function Dress(){
 
