@@ -3,6 +3,7 @@ import foto from "../../../images/Home/fotoInicial.webp";
 import dados from "../../../../db.json"
 import { useEffect, useMemo, useState } from "react";
 import type { TipoCasamento } from "../../../types/tipoCasamento";
+import { Link } from "react-router-dom";
 
 export default function Home(){
 
@@ -136,9 +137,8 @@ export default function Home(){
                     Celebrando o amor, a união e os momentos especiais
                 </p>
 
-                <button className="mt-8 px-8 py-3 rounded-full bg-white text-[var(--color-2)] font-medium hover:scale-105 transition-transform">
-                    Confirmar presença
-                </button>
+                
+                <Link to="/confirmar_presenca"  className="mt-8 px-8 py-3 rounded-full bg-white text-[var(--color-2)] font-medium hover:scale-105 transition-transform" >Confirmar presença</Link>
             </section>
            
             <section className="py-10 px-6 text-center">
