@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const URL_API = import.meta.env.VITE_URL_API;
 
@@ -7,8 +7,6 @@ export default function ConvidadoConfirmar({open,  onClose, children, idConvidad
 
     const navigate = useNavigate();
     const [loading, setLoading] = useState<boolean>(false);
-    const { idConvite } = useParams<{ idConvite: string }>();
-    const { nomeConvite } = useParams<{ nomeConvite: string }>();
 
     const handleSubmit = async () => {
         try{
@@ -23,7 +21,7 @@ export default function ConvidadoConfirmar({open,  onClose, children, idConvidad
                 throw new Error("Falha ao confirmar presença. O servidor está online?");
             }
             alert("Presença confirmada!");
-            navigate(`/convidados_presenca/${nomeConvite}/${idConvite}`);
+            navigate(`/`);
             window.location.reload();
             setLoading(false);
         } catch (err) {

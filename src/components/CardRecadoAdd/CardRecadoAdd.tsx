@@ -29,11 +29,11 @@ export default function CardRecadoAdd({open,  onClose, children, }: {open: boole
             }
 
             alert("Recado salvo com sucesso!");
-            navigate("/mural_recados");
+            navigate("/");
             window.location.reload();
         } catch {
             alert("Falha ao salvar recado!");
-            navigate("/mural_recados");
+            navigate("/");
             window.location.reload();
         } finally {
             setLoading(false);
