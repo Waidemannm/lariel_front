@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import type { TipoCasamento } from "../../../types/tipoCasamento";
 import type { TipoCasal } from "../../../types/tipoCasal";
 import dados from "../../../../db.json";
+import foto from "../../../images/Casamento/igreja.webp";
 
-    export default function Casamento(){
+export default function Casamento(){
 
         const [casamento, setCasamento] = useState<TipoCasamento>();
         const [casal, setCasal] = useState<TipoCasal[]>([]);
@@ -88,7 +89,7 @@ import dados from "../../../../db.json";
                             <Link to={googleCalendarUrl} target="_blank" rel="noopener noreferrer" className="bg-[var(--color-2)] shadow-xl p-3 rounded-lg text-white w-full md:w-56 lg:w-45 flex justify-center items-center hover:text-blue-200 transition-colors lg:text-sm font-medium">ADICIONAR À AGENDA </Link>
                         </div>
                     </div>
-                    <img src={casamento?.urlFoto} alt="Foto do local do casamento" className="shadow-xl w-full mt-5 md:w-1/4 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>
+                    <img src={foto} alt="Foto do local do casamento" className="shadow-xl w-full mt-5 md:w-1/4 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>
                 </div>
             </main>
         );

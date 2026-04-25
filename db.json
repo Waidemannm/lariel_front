@@ -1,3 +1,5 @@
+
+
 {
     "casamento":[
         {
@@ -21,14 +23,14 @@
             "nome": "Larissa",
             "nomeCompleto": "Larissa Araújo Guilherme",
             "idade": 26,
-            "urlFoto": "/lariel/src/images/Casal/"
+            "urlFoto": ""
         },
         {
             "id": 2,
             "nome": "Samuel",
             "nomeCompleto": "Samuel ",
             "idade": 26,
-            "urlFoto": "/lariel/src/images/Casal/"
+            "urlFoto": ""
         }
     ], 
     

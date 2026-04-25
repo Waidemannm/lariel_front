@@ -1,6 +1,7 @@
 import dados from "../../../../db.json";
 import { useEffect, useState } from "react";
 import type { TipoHistoria } from "../../../types/tipoHIstoria";
+import foto from "../../../images/Historia/nossaHistoria.webp";
 
 export default function Historia(){
 
@@ -17,7 +18,7 @@ export default function Historia(){
                 <h2 className="text-2xl font-semibold mb-3 text-center">Nossa história</h2>
                 <p className="text-md font-normal">{historia?.texto}</p> 
             </div>
-            <img src={historia?.urlFoto} alt="Foto do casal" className="shadow-xl w-full md:w-1/4 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>
+            <img src={foto} alt="Foto do casal" className="shadow-xl w-full md:w-1/4 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>
         </main>
     );
 }

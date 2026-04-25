@@ -1,6 +1,7 @@
 import dados from "../../../../db.json";
 import type { TipoDress } from "../../../types/tipoDress";
 import { useEffect, useState } from "react";
+import foto from "../../../images/Dress/dress.webp";
 
 export default function Dress(){
 
@@ -17,7 +18,7 @@ export default function Dress(){
                 <h1 className="text-2xl font-semibold text-center mb-3">Dress code</h1>
                 <p className="text-md font-normal">{dress?.texto}</p>
             </div>
-            <img src={dress?.urlFoto} alt="Foto do estilo de roupa para o casamento" className="shadow-xl w-full md:w-1/4 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>
+            <img src={foto} alt="Foto do estilo de roupa para o casamento" className="shadow-xl w-full md:w-1/4 max-w-sm h-auto border border-gray-300 rounded-lg object-cover"/>
         </main>
     );
 } 
